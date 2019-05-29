@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Relax</string>
+    <string name="developer">Thuận thông thái</string>
+    <string name="website">thuandeptrai@gmail.com</string>
+    <string name="menu_item_import">Ai là triệu phú</string>
+    <string name="menu_item_gallery">Danh sách bài hát</string>
+    <string name="menu_item_slideshow">Bài hát yêu thích</string>
+    <string name="menu_item_tools">Nghe nhạc</string>
+    <string name="menu_group_communicate">Đuổi hình bắt chữ</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@android:id/tabhost"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/back"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back"/>
+    <TabWidget android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <FrameLayout android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:id="@+id/questions"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/titlelist"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+            <TextView
+                android:id="@+id/titlelist"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/searchmusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC107"
+                android:textSize="25dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:text="Danh sách câu hỏi"
+                />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:shrinkColumns="1"
+                android:paddingTop="4dip"
+                >
+                <TableRow>
+                    <TextView android:text="Câu hỏi:" />
+                    <EditText android:id="@+id/question" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Đáp án A:" />
+                    <EditText android:id="@+id/answerA"
+                        android:maxLength="35"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Đáp án B:" />
+                    <EditText android:id="@+id/answerB"
+                        android:maxLength="35"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Đáp án C:" />
+                    <EditText android:id="@+id/answerC"
+                        android:maxLength="35"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Đáp án D:" />
+                    <EditText android:id="@+id/answerD"
+                        android:maxLength="35"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Đáp án:" />
+                    <RadioGroup android:id="@+id/answer"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton android:id="@+id/a"
+                            android:text="A"
+                            android:checked="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                        <RadioButton android:id="@+id/b"
+                            android:text="B"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            />
+                        <RadioButton android:id="@+id/c"
+                            android:text="C"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            />
+                        <RadioButton android:id="@+id/d"
+                            android:text="D"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            />
+                    </RadioGroup>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Độ khó:" />
+                    <RadioGroup android:id="@+id/level"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton android:id="@+id/easy"
+                            android:text="Dễ"
+                            android:checked="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                        <RadioButton android:id="@+id/tb"
+                            android:text="Trung Bình"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            />
+                        <RadioButton android:id="@+id/kho"
+                            android:text="Khó"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+                    </RadioGroup>
+                </TableRow>
+                <Button android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    />
+            </TableLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
+</TabHost>

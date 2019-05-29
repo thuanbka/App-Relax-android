@@ -1,0 +1,70 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/listnhac"
+    tools:context=".MainActivity">
+    <com.andremion.floatingnavigationview.FloatingNavigationView
+        android:id="@+id/floating_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:headerLayout="@layout/navigation_view_header"
+        app:layout_anchorGravity="top"
+        app:menu="@menu/navigation_view" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="90dp"
+            android:maxLines="1"
+            android:textColor="#FFC107"
+            android:maxLength="40"
+            android:layout_marginRight="10dp"
+            android:id="@+id/searchtext"
+            android:hint="Mời nhập tên ca sĩ hoặc tên bài hát"
+            android:textColorHint="#F50A5C"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/searchmusic"
+            android:layout_height="30dp"
+            android:layout_marginLeft="90dp"
+            android:textSize="14dp"
+            android:background="#0FC937"
+            android:layout_below="@+id/searchtext"
+            android:onClick="search"
+            android:text="Tìm kiếm"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/titlelist"
+            android:layout_below="@+id/searchmusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFC107"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:text="Danh sách bài hát"
+            />
+        <ListView
+            android:id="@+id/listview"
+            android:layout_below="@+id/titlelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            ></ListView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

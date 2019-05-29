@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiến thắng!"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:textColor="#1d1ae1"
+            />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/coint"
+            android:background="@drawable/winsec"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#131310"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/monney"
+                android:text="150.000.000 VND "/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="OK"
+            android:id="@+id/home"
+            android:textSize="20dp"
+            android:layout_below="@+id/coint"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/continues"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

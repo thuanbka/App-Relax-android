@@ -1,0 +1,105 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/catchword"
+        >
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/back"
+            android:background="@drawable/back"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+           android:id="@+id/function">
+            <Button
+                android:layout_width="80dip"
+                android:layout_height="50dip"
+                android:background="@drawable/ition"
+                android:textSize="20dp"
+                android:id="@+id/help"
+                android:text="Gợi ý"
+                android:onClick="ClickHelp"
+                />
+            <Button
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/questionnumber"
+                android:textSize="25dp"
+                android:textColor="#0325FD"
+                android:id="@+id/numberquestion"
+                android:text="10"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ition"
+                android:layout_marginLeft="20dp"
+                android:text="100"
+                android:id="@+id/score"
+                android:textColor="#F30226"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/function"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dip"
+                android:layout_height="230dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:columnWidth="40dp"
+                android:numColumns="auto_fit"
+                android:id="@+id/result"
+                ></GridView>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:numColumns="auto_fit"
+                android:columnWidth="40dp"
+                android:id="@+id/idea"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"></GridView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

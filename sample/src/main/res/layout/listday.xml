@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/iconback"
+        android:background="@drawable/back"/>
+    <TextView
+        android:textColor="#c10306"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:textSize="25dp"
+        android:text=""/>
+    <TextView
+        android:textColor="#2fb705"
+        android:layout_width="wrap_content"
+        android:id="@+id/country"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text=""/>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        >
+    </ListView>
+
+</LinearLayout>
