@@ -67,6 +67,7 @@ public class ListLoveMusic extends Activity {
                 Intent intent = new Intent(ListLoveMusic.this, PlayMusic.class);
                 intent.putExtra("vt",arr.get(position).getId());
                 startActivity(intent);
+
                 finish();
 
             }

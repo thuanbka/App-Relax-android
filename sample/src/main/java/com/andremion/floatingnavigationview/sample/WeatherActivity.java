@@ -109,7 +109,7 @@ public class WeatherActivity extends AppCompatActivity {
 
     private void GetCurrentWeatherData(String data)
     {
-        String url= "http://api.openweathermap.org/data/2.5/find?q="+data+"&units=metric&appid=fbe9c9b00e4771fb9c7249475155d0ac";
+        String url= "https://api.openweathermap.org/data/2.5/find?q="+data+"&units=metric&appid=2e81cb8b70256d62b3a2f8d3a4deee3e";
         final RequestQueue requestQueue = Volley.newRequestQueue(WeatherActivity.this);
         StringRequest stringRequest =new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -163,7 +163,7 @@ public class WeatherActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-
+                        error.printStackTrace();
                     }
                 }
         );

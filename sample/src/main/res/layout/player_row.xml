@@ -35,6 +35,7 @@
             android:layout_toRightOf="@+id/list_image"
             android:textColor="#0F0D04"
             android:typeface="sans"
+            android:text=""
             android:textSize="20sp"
             android:textStyle="bold"/>
         <TextView

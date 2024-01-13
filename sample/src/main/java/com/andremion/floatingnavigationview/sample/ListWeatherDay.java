@@ -54,7 +54,7 @@ public class ListWeatherDay extends AppCompatActivity {
     }
 
     private void GetSevenDayData(String data) {
-        String url= "https://api.openweathermap.org/data/2.5/forecast?q="+data+"&units=metric&appid=fbe9c9b00e4771fb9c7249475155d0ac";
+        String url= "https://api.openweathermap.org/data/2.5/forecast?q="+data+"&units=metric&appid=2e81cb8b70256d62b3a2f8d3a4deee3e";
         final RequestQueue requestQueue = Volley.newRequestQueue(ListWeatherDay.this);
         StringRequest stringRequest =new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
